@@ -1,0 +1,214 @@
+<html>
+<head>
+<title>Putri's Website</title>
+<style>
+{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+
+.header {
+  padding: 35px;
+  text-align: center;
+  background:  palevioletred;
+  color: white;
+}
+
+
+.header h1 {
+  font-size: 40px;
+}
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #aed6f1 ;
+}
+
+
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+.navbar a.right {
+  float: right;
+}
+
+
+.navbar a:hover {
+  background-color: brown;
+  color: black;
+}
+
+
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+
+.main {   
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+
+.fakeimg {
+  background-color: #d466d3d0;
+  width: 100%;
+  padding: 20px;
+}
+
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width:100%;
+  }
+}
+</style>
+
+<body>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {margin:0;height:200px;}
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.instagram {
+  background:  #e1306c;
+  color: white;
+}
+.content {
+  margin-left: 75px;
+  font-size: 30px;
+}
+</style>
+<body>
+
+<div class="icon-bar">
+  
+  <a href="https://www.youtube.com/channel/UCTugp1MArLEks-T0ekvkxCA@puterinazatul" class="youtube"><i class="fa fa-youtube"></i></a> 
+  <a href="https://snapchat.com/t/2Dqa3GME" class="snapchat-ghost"><i class="fa fa-snapchat"></i></a> 
+  <a href="https://www.instagram.com/putrinzatul._/profilecard/?igsh=MXRxdDNkNHp3bjhoYw==" class="instagram"><i class="fa fa-instagram"></i></a> 
+</div>
+
+    
+<div style="background:pink;padding:5px">
+    <h4 style="text-align:center">Hello ! This Is My Personal Website.</h4>
+  </div>
+  
+  <div class="header">
+    <h1> Welcome To My Personal Website.</h1>
+
+   <script src="https://cdn.logwork.com/widget/digital.js"></script>
+    <a href="https://logwork.com/current-time-in-kuala-lumpur-malaysia" class="digital-clock" data-style="round" data-size="400" data-timezone="Asia/Kuala_Lumpur" data-language="en">Kuala Lumpur,  Malaysia</a>
+    <p>A website created by Putrinzatul.</p>
+  </div>
+
+  <div class="navbar" >
+    <a href="index.html">Home</a>
+    <a href="aboutme.html">About Me</a>
+    <a href="family.html">Family</a>
+    <a href="myoutfit.html"> My Outfit </a>
+    <a href="gallery.html">Gallery</a>
+
+    <section>
+      <img class="mySlides" src="images/put 4.jpg" style="width:100%">
+      <img class="mySlides" src="images/put 5.jpg" style="width:100%">
+      <img class="mySlides" src="images/put 8.jpg" style="width:100%">
+    </section>
+
+    
+      <h2 align="center">INTRODUCTION</h2>
+      <p align="center"><i>My name is Puteri Nazatul Adawiah binti Mohd Rashid (2022838372).I am from class CDIM11105A. I currently study at UiTM Negeri Sembilan Branch, Rembau Campus and studying in Diploma Information Management.
+         This website is for the course that i take which is Introduction to Web Content Management & Design (IMD 318). Purpose of this website are for individual assignment purpose and prepared for Dr. Seri Intan Idayu binti Shahrul Asari.</i></p>
+
+
+        <p align="center"> This is my first website. In this website you will know about me, family, friends including my outfit and gallery.</p>
+    </section>
+ 
+    <script>
+     
+      var myIndex = 0;
+      carousel();
+      
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 3000);
+      }
+      </script>
+      
+
+    <div align="center">
+      <footer>
+        <p><b>&copy; BY PUTERI NAZATUL </b></p>
+      </footer>
+    </div>
+    </div>
+
+</head>
+</html>
